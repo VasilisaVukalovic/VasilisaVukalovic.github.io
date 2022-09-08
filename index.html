@@ -5,41 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vasilisa Vukalovic</title>
-    <link
-      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
     <link href="style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lora"
+    />
   </head>
 
-  <body class="text-center bg-gray-200">
-    <div class="rounded-xl text-center bg-white w-8/12 mx-auto mt-10 p-5">
-      <img
-        src="img/profilna.jpg"
-        class="shadow-xl rounded-full border-4 border-gray w-3/12 mx-auto"
-      />
-      <h1 class="text-3xl my-5 font-semibold">Vasilisa Vukalovic</h1>
-
-      <a
-        class="font-bold p-5 hover:bg-black transition delay-150 duration-300 ease-in-out hover:text-white cursor-pointer"
-        href="https://github.com/VasilisaVukalovic"
-        >Github</a
-      >
-      <a
-        class="font-bold p-5 hover:bg-black transition delay-150 duration-300 ease-in-out hover:text-green-700 cursor-pointer"
-        href="https://www.linkedin.com/in/vasilisa-vukalovic-5b495a249/"
-        >LinkedIn</a
-      >
-      <a
-        class="font-bold p-5 mt-3 my-3 hover:bg-black hover:text-blue-500 transition delay-150 duration-300 ease-in-out cursor-pointer"
-        href="https://facebook.com/vasilisa.vukalovic"
-        >Facebook</a
-      >
-      <a
-        class="font-bold p-5 hover:bg-black transition delay-150 duration-300 ease-in-out hover:text-yellow-700 cursor-pointer"
-        href="https://www.instagram.com/_v_a_k_i"
-        >Instagram</a
-      >
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="left-header-section">
+          <h2 class="name">Vasilisa Vukalović</h2>
+        </div>
+        <div class="center-header-section">
+          <div class="dropdown">
+            <button class="dropbtn">Downloads</button>
+            <div class="dropdown-content">
+              <a href=""><i class="fa-solid fa-download"></i> CV</a>
+              <a href=""
+                ><i class="fa-solid fa-download"></i> Motivational letter</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="right-header-section">
+          <a href="https://github.com/VasilisaVukalovic"
+            ><i class="fa-brands fa-github fa-lg" style="color: #0a8531"></i
+          ></a>
+          <a href=" https://www.linkedin.com/in/vasilisa-vukalovic-5b495a249/"
+            ><i
+              class="fa-brands fa-linkedin fa-lg fa-spin-hover"
+              style="color: #0a8531"
+            ></i
+          ></a>
+          <a href="https://www.facebook.com/vasilisa.vukalovic"
+            ><i class="fa-brands fa-facebook fa-lg" style="color: #0a8531"></i
+          ></a>
+          <a href="mailto:vasilisavukalovic6@gmail.com"
+            ><i class="far fa-envelope fa-lg" style="color: #0a8531"></i
+          ></a>
+          <a href="https://www.instagram.com/_v_a_k_i/" class="instagram-icon"
+            ><i class="fa-brands fa-instagram fa-lg" style="color: #0a8531"></i
+          ></a>
+        </div>
+      </div>
+      <div class="body">
+        <div class="center" id="center">
+          <div class="left-body-section">
+            <div class="profile-picture">
+              <img
+                src="img/profilna.jpg"
+                onmouseover="scrollToCenter()"
+                alt="profile-picture"
+              />
+            </div>
+          </div>
+          <div class="center-body-section">
+            <div class="about-me">
+              <h2>Hello, I am Vasilisa Vukalović,</h2><br>
+              <h3>graduate student of the Faculty of Electrical Engineering
+              </h3>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <footer>
+      <script>
+        function scrollToCenter() {
+          const element = document.getElementById("center");
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      </script>
+    </footer>
   </body>
 </html>

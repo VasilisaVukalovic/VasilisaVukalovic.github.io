@@ -1,3 +1,3 @@
-# VasilisaVukalovic.github.io
+# VladoMilicic.github.io
 
-My personal github page: https://VasilisaVukalovic.github.io
+My personal github page: https://VladoMilicic.github.io
